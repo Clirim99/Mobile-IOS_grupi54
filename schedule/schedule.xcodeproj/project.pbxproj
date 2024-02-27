@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711B4D1A2B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B4D192B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift */; };
+		711B4D1C2B8E916E00F2AFB1 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B4D1B2B8E916E00F2AFB1 /* SignupViewController.swift */; };
+		711B4D1F2B8E950300F2AFB1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 711B4D1D2B8E950300F2AFB1 /* DataModel.xcdatamodeld */; };
 		7140AF752B8D0B3B008BC3A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AF742B8D0B3B008BC3A7 /* AppDelegate.swift */; };
 		7140AF772B8D0B3B008BC3A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AF762B8D0B3B008BC3A7 /* SceneDelegate.swift */; };
 		7140AF7C2B8D0B3B008BC3A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7140AF7A2B8D0B3B008BC3A7 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		711B4D192B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCotrollerViewController.swift; sourceTree = "<group>"; };
+		711B4D1B2B8E916E00F2AFB1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		711B4D1E2B8E950300F2AFB1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		7140AF712B8D0B3B008BC3A7 /* schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7140AF742B8D0B3B008BC3A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7140AF762B8D0B3B008BC3A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				7140AF762B8D0B3B008BC3A7 /* SceneDelegate.swift */,
 				7140AFDA2B8D2F40008BC3A7 /* ViewController.swift */,
 				7140AF7A2B8D0B3B008BC3A7 /* Main.storyboard */,
+				711B4D1D2B8E950300F2AFB1 /* DataModel.xcdatamodeld */,
+				711B4D1B2B8E916E00F2AFB1 /* SignupViewController.swift */,
+				711B4D192B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift */,
 				7140AF7D2B8D0B3C008BC3A7 /* Assets.xcassets */,
 				7140AF7F2B8D0B3C008BC3A7 /* LaunchScreen.storyboard */,
 				7140AF822B8D0B3C008BC3A7 /* Info.plist */,
@@ -260,6 +269,9 @@
 			files = (
 				7140AF752B8D0B3B008BC3A7 /* AppDelegate.swift in Sources */,
 				7140AFDB2B8D2F40008BC3A7 /* ViewController.swift in Sources */,
+				711B4D1C2B8E916E00F2AFB1 /* SignupViewController.swift in Sources */,
+				711B4D1F2B8E950300F2AFB1 /* DataModel.xcdatamodeld in Sources */,
+				711B4D1A2B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift in Sources */,
 				7140AF772B8D0B3B008BC3A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +613,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		711B4D1D2B8E950300F2AFB1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				711B4D1E2B8E950300F2AFB1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 711B4D1E2B8E950300F2AFB1 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7140AF692B8D0B3B008BC3A7 /* Project object */;
 }
