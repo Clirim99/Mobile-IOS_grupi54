@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Spending" representedClassName="Spending" syncable="YES" codeGenerationType="class">
-        <attribute name="cost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="spendings" inverseEntity="User"/>
+    <entity name="ProductType" representedClassName="ProductType" syncable="YES">
+        <attribute name="desciption" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="type_name" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+    <entity name="Spending" representedClassName="Spending" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="product_name" optional="YES" attributeType="String"/>
+        <relationship name="buyer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="spendings" inverseEntity="User"/>
+        <relationship name="product_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductType"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="first_name" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="last_name" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="username" optional="YES" attributeType="String"/>
-        <relationship name="spendings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spending" inverseName="user" inverseEntity="Spending"/>
+        <relationship name="spendings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spending" inverseName="buyer" inverseEntity="Spending"/>
     </entity>
 </model>
