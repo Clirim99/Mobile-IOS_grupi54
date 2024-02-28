@@ -1,9 +1,12 @@
+
+
 import UIKit
 import CoreData
 
 class LoginViewController: UIViewController {
-    @IBOutlet var usernameTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
 
     override func viewDidLoad() {
@@ -11,7 +14,8 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func loginAction(_ sender: UIButton) {
+   
+        @IBAction func loginAction(_ sender: Any) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -32,6 +36,7 @@ class LoginViewController: UIViewController {
 
             if let matchedUser = users.first as? User {
                 print("Login successful! Welcome, \(matchedUser.username!)")
+                navigateToSpendingsViewController()
                 // Optionally, you can perform a segue or navigate to another screen upon successful login
             } else {
                 print("Invalid username or password")
@@ -41,6 +46,32 @@ class LoginViewController: UIViewController {
             print("Error fetching user: \(error.localizedDescription)")
         }
     }
+    func navigateToSpendingsViewController() {
+            // Get reference to the storyboard
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your actual storyboard name
+//
+//            // Instantiate SpendingsViewController from the storyboard
+//            if let spendingsViewController = storyboard.instantiateViewController(withIdentifier: "SpendingsViewController") as? SpendingsViewController {
+//                
+//                // Perform the navigation
+//                navigationController?.pushViewController(spendingsViewController, animated: true)
+                
+//                let destinationViewController = SpendingsViewController ()
+//                navigationController?.pushViewController(destinationViewController, animated: true)
+
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let destinationViewController = storyboard.instantiateViewController(withIdentifier: "SpendingsViewController") as? SpendingsViewController {
+            
+            print("Successfully instantiated SpendingsViewController")
+            
+            // Perform the navigation
+            navigationController?.pushViewController(destinationViewController, animated: true)
+        } else {
+            print("Failed to instantiate SpendingsViewController")
+        }
+            }
+        
 
     // ... Additional code for navigation, etc.
 
