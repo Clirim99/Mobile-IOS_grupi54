@@ -97,6 +97,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
         
         // Create a new Spending object
         if let newSpending = NSEntityDescription.insertNewObject(forEntityName: "Spending", into: context) as? Spending {
+            newSpending.id = UUID()
             newSpending.cost = price
             newSpending.product_name = name
             newSpending.buyer = user
@@ -119,6 +120,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
             // Save the context
             do {
                 try context.save()
+                self.prodsFromDb.append(newSpending)
             } catch {
                 print("Failed to save product: \(error)")
             }
