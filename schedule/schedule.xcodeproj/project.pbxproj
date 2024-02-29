@@ -27,6 +27,7 @@
 		719AF3F82B8FC97B00CFD39D /* ProductType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3F22B8FC97B00CFD39D /* ProductType+CoreDataClass.swift */; };
 		719AF3F92B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3F32B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift */; };
 		719AF4002B8FE15000CFD39D /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3FF2B8FE15000CFD39D /* SpendingsViewController.swift */; };
+		71F4612C2B901E5700EDD5C4 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		719AF3F22B8FC97B00CFD39D /* ProductType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		719AF3F32B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductType+CoreDataProperties.swift"; path = "../ProductType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		719AF3FF2B8FE15000CFD39D /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
+		71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				719AF3B92B8F2FA900CFD39D /* FirstTableViewController.swift */,
 				711B4D1B2B8E916E00F2AFB1 /* SignupViewController.swift */,
 				711B4D192B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift */,
+				71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				719AF3F52B8FC97B00CFD39D /* Spending+CoreDataProperties.swift in Sources */,
 				711B4D1C2B8E916E00F2AFB1 /* SignupViewController.swift in Sources */,
 				719AF3F62B8FC97B00CFD39D /* User+CoreDataClass.swift in Sources */,
+				71F4612C2B901E5700EDD5C4 /* SecondTableViewController.swift in Sources */,
 				719AF3F42B8FC97B00CFD39D /* Spending+CoreDataClass.swift in Sources */,
 				719AF3F92B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift in Sources */,
 				711B4D1F2B8E950300F2AFB1 /* DataModel.xcdatamodeld in Sources */,
