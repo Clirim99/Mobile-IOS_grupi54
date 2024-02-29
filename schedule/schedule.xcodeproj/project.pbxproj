@@ -18,7 +18,7 @@
 		7140AF8C2B8D0B3D008BC3A7 /* scheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AF8B2B8D0B3D008BC3A7 /* scheduleTests.swift */; };
 		7140AF962B8D0B3D008BC3A7 /* scheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AF952B8D0B3D008BC3A7 /* scheduleUITests.swift */; };
 		7140AF982B8D0B3D008BC3A7 /* scheduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AF972B8D0B3D008BC3A7 /* scheduleUITestsLaunchTests.swift */; };
-		7140AFDB2B8D2F40008BC3A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AFDA2B8D2F40008BC3A7 /* ViewController.swift */; };
+		7140AFDB2B8D2F40008BC3A7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140AFDA2B8D2F40008BC3A7 /* FirstViewController.swift */; };
 		719AF3BA2B8F2FA900CFD39D /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3B92B8F2FA900CFD39D /* FirstTableViewController.swift */; };
 		719AF3F42B8FC97B00CFD39D /* Spending+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3EE2B8FC97B00CFD39D /* Spending+CoreDataClass.swift */; };
 		719AF3F52B8FC97B00CFD39D /* Spending+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3EF2B8FC97B00CFD39D /* Spending+CoreDataProperties.swift */; };
@@ -27,7 +27,8 @@
 		719AF3F82B8FC97B00CFD39D /* ProductType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3F22B8FC97B00CFD39D /* ProductType+CoreDataClass.swift */; };
 		719AF3F92B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3F32B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift */; };
 		719AF4002B8FE15000CFD39D /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AF3FF2B8FE15000CFD39D /* SpendingsViewController.swift */; };
-		71F4612C2B901E5700EDD5C4 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */; };
+		71F461352B90ADD600EDD5C4 /* ActiveUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F461332B90ADD600EDD5C4 /* ActiveUser+CoreDataClass.swift */; };
+		71F461362B90ADD600EDD5C4 /* ActiveUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F461342B90ADD600EDD5C4 /* ActiveUser+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,7 @@
 		7140AF912B8D0B3D008BC3A7 /* scheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7140AF952B8D0B3D008BC3A7 /* scheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITests.swift; sourceTree = "<group>"; };
 		7140AF972B8D0B3D008BC3A7 /* scheduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7140AFDA2B8D2F40008BC3A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7140AFDA2B8D2F40008BC3A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		719AF3B92B8F2FA900CFD39D /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		719AF3EE2B8FC97B00CFD39D /* Spending+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Spending+CoreDataClass.swift"; path = "../Spending+CoreDataClass.swift"; sourceTree = "<group>"; };
 		719AF3EF2B8FC97B00CFD39D /* Spending+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Spending+CoreDataProperties.swift"; path = "../Spending+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -72,7 +73,8 @@
 		719AF3F22B8FC97B00CFD39D /* ProductType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		719AF3F32B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProductType+CoreDataProperties.swift"; path = "../ProductType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		719AF3FF2B8FE15000CFD39D /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
-		71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		71F461332B90ADD600EDD5C4 /* ActiveUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActiveUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71F461342B90ADD600EDD5C4 /* ActiveUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActiveUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,8 @@
 		719AF3C12B8F61F800CFD39D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				71F461342B90ADD600EDD5C4 /* ActiveUser+CoreDataProperties.swift */,
+				71F461332B90ADD600EDD5C4 /* ActiveUser+CoreDataClass.swift */,
 				719AF3EE2B8FC97B00CFD39D /* Spending+CoreDataClass.swift */,
 				719AF3EF2B8FC97B00CFD39D /* Spending+CoreDataProperties.swift */,
 				719AF3F02B8FC97B00CFD39D /* User+CoreDataClass.swift */,
@@ -170,11 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				719AF3FF2B8FE15000CFD39D /* SpendingsViewController.swift */,
-				7140AFDA2B8D2F40008BC3A7 /* ViewController.swift */,
+				7140AFDA2B8D2F40008BC3A7 /* FirstViewController.swift */,
 				719AF3B92B8F2FA900CFD39D /* FirstTableViewController.swift */,
 				711B4D1B2B8E916E00F2AFB1 /* SignupViewController.swift */,
 				711B4D192B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift */,
-				71F4612B2B901E5700EDD5C4 /* SecondTableViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -313,15 +316,16 @@
 				7140AF752B8D0B3B008BC3A7 /* AppDelegate.swift in Sources */,
 				719AF3F82B8FC97B00CFD39D /* ProductType+CoreDataClass.swift in Sources */,
 				719AF4002B8FE15000CFD39D /* SpendingsViewController.swift in Sources */,
-				7140AFDB2B8D2F40008BC3A7 /* ViewController.swift in Sources */,
+				7140AFDB2B8D2F40008BC3A7 /* FirstViewController.swift in Sources */,
 				719AF3F52B8FC97B00CFD39D /* Spending+CoreDataProperties.swift in Sources */,
 				711B4D1C2B8E916E00F2AFB1 /* SignupViewController.swift in Sources */,
 				719AF3F62B8FC97B00CFD39D /* User+CoreDataClass.swift in Sources */,
-				71F4612C2B901E5700EDD5C4 /* SecondTableViewController.swift in Sources */,
+				71F461352B90ADD600EDD5C4 /* ActiveUser+CoreDataClass.swift in Sources */,
 				719AF3F42B8FC97B00CFD39D /* Spending+CoreDataClass.swift in Sources */,
 				719AF3F92B8FC97B00CFD39D /* ProductType+CoreDataProperties.swift in Sources */,
 				711B4D1F2B8E950300F2AFB1 /* DataModel.xcdatamodeld in Sources */,
 				719AF3F72B8FC97B00CFD39D /* User+CoreDataProperties.swift in Sources */,
+				71F461362B90ADD600EDD5C4 /* ActiveUser+CoreDataProperties.swift in Sources */,
 				711B4D1A2B8E914500F2AFB1 /* LoginViewCotrollerViewController.swift in Sources */,
 				7140AF772B8D0B3B008BC3A7 /* SceneDelegate.swift in Sources */,
 				719AF3BA2B8F2FA900CFD39D /* FirstTableViewController.swift in Sources */,

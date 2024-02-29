@@ -54,6 +54,7 @@ class SignupViewController: UIViewController {
             // Save the user object to Core Data
             do {
                 try context.save()
+                navigateToLoginViewController()
                 print("User saved successfully")
                 fetchUsers()
                 // Optionally, you can show an alert or navigate to another screen upon successful signup
@@ -94,7 +95,19 @@ class SignupViewController: UIViewController {
        }
             
           
-        
+    func navigateToLoginViewController() {
+          
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let destinationViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+            
+            print("Successfully instantiated LoginViewController")
+            
+            // Perform the navigation
+            navigationController?.pushViewController(destinationViewController, animated: true)
+        } else {
+            print("Failed to instantiate LoginViewController")
+        }
+    }
         
         
     /*

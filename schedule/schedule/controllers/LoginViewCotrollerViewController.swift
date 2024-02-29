@@ -36,6 +36,8 @@ class LoginViewController: UIViewController {
 
             if let matchedUser = users.first as? User {
                 print("Login successful! Welcome, \(matchedUser.username!)")
+                insertNewActiveUser(user:matchedUser)
+                print(matchedUser.id)
                 navigateToSpendingsViewController()
                 // Optionally, you can perform a segue or navigate to another screen upon successful login
             } else {
@@ -47,19 +49,7 @@ class LoginViewController: UIViewController {
         }
     }
     func navigateToSpendingsViewController() {
-            // Get reference to the storyboard
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your actual storyboard name
-//
-//            // Instantiate SpendingsViewController from the storyboard
-//            if let spendingsViewController = storyboard.instantiateViewController(withIdentifier: "SpendingsViewController") as? SpendingsViewController {
-//                
-//                // Perform the navigation
-//                navigationController?.pushViewController(spendingsViewController, animated: true)
-                
-//                let destinationViewController = SpendingsViewController ()
-//                navigationController?.pushViewController(destinationViewController, animated: true)
-
-        
+          
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let destinationViewController = storyboard.instantiateViewController(withIdentifier: "SpendingsViewController") as? SpendingsViewController {
             
@@ -75,4 +65,25 @@ class LoginViewController: UIViewController {
 
     // ... Additional code for navigation, etc.
 
+    func insertNewActiveUser(user: User) {
+        guard let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext else {
+            print("Unable to access managed object context")
+            return
+        }
+        
+        context.perform {
+            // Insert new ActiveUser entity
+            let newActiveUser = ActiveUser(context: context)
+            newActiveUser.id = UUID()
+            newActiveUser.user_id = user
+            
+            do {
+                try context.save()
+                print("New ActiveUser entity inserted successfully.")
+            } catch {
+                print("Failed to save context: \(error)")
+            }
+            
+        }
+    }
 }
