@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
-//  schedule
+// AppDelegate.swift
+// schedule
 //
-//  Created by user257547 on 2/26/24.
+// Created by user257547 on 2/26/24.
 //
 
 import UIKit
