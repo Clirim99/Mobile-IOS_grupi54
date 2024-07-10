@@ -16,12 +16,23 @@ class SignupViewController: UIViewController {
     @IBOutlet var password:UITextField!
     @IBOutlet var cofirmpassword:UITextField!
     @IBOutlet var signupButton: UIButton!
+    @IBOutlet var passwordMinimumLengthWarning: UILabel!
     
+    @IBOutlet weak var passwordsMustMatch: UILabel!
+    
+    @IBOutlet weak var emailSuffix: UILabel!
+    
+    @IBOutlet weak var firstNameRequired: UILabel!
+    
+    @IBOutlet weak var lastNameRequired: UILabel!
+    
+    @IBOutlet weak var userNameRequired: UILabel!
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        
+        passwordMinimumLengthWarning.isHidden = true
+        passwordsMustMatch.isHidden = true
+        emailSuffix.isHidden = true
         
         // Do any additional setup after loading the view.
     }
@@ -32,13 +43,92 @@ class SignupViewController: UIViewController {
             }
             
             let context = appDelegate.persistentContainer.viewContext
+        
+        guard let firstName = first_name.text, !firstName.isEmpty else {
+                    
+                    print("All fields are required")
+                firstNameRequired.text = "firstname is required"
+            firstNameRequired.isHidden = false
             
+                    return
+                }
+        guard let lastName = last_name.text, !lastName.isEmpty else{
+            
+            print("All fields are required")
+            lastNameRequired.text = "lastname is required"
+            lastNameRequired.isHidden = false
+            return
+            
+        }
+        guard let emailText = email.text, !emailText.isEmpty else{
+            
+            print("All fields are required")
+            emailSuffix.text = "email is required"
+            emailSuffix.isHidden = false
+
+            return
+            
+        }
+        guard let usernameText = username.text, !usernameText.isEmpty else{
+            
+            print("All fields are required")
+            userNameRequired.text = "username is required"
+            userNameRequired.isHidden = false
+            return
+            
+        }
+        guard let passwordText = password.text, !passwordText.isEmpty else{
+            
+            print("All fields are required")
+            passwordsMustMatch.text = "confirmpassword is required"
+            passwordsMustMatch.isHidden = false
+            return
+            
+        }
+        guard let confirmpasswordText = cofirmpassword.text, !confirmpasswordText.isEmpty else{
+            
+            print("All fields are required")
+            passwordMinimumLengthWarning.text = "password is required"
+            passwordMinimumLengthWarning.isHidden = false
+            return
+            
+        }
             // Validate password and confirm password
         guard let password = password.text, let confirmPassword = cofirmpassword.text, password == confirmPassword else {
             // Handle password mismatch error
             print("Password and confirm password mismatch")
             return
         }
+        
+       
+        
+        
+        guard password == confirmPassword else {
+                   // Handle password mismatch error
+                   print("Password and confirm password mismatch")
+            passwordsMustMatch.text = "Password and confirm password mismatch"
+            passwordsMustMatch.isHidden = false
+               // passwordMinimumLengthWarning.text = "password doesnt not match"
+
+                   return
+        }
+               
+        guard password.count > 8 else {
+                   // Handle password length error
+        print("Password must be more than 8 characters")
+            passwordMinimumLengthWarning.text = "Password must be more than 8 characters"
+            passwordMinimumLengthWarning.isHidden = false
+            
+        return
+               }
+        
+        guard let emailText = email.text, emailText.hasSuffix("@gmail.com") else {
+                   // Handle invalid email error
+                   print("Email must end with @gmail.com")
+            emailSuffix.text = "Email must end with @gmail.com"
+                   return
+            emailSuffix.isHidden = false
+               }
             
             // Create a new User managed object
         if let userEntity = NSEntityDescription.entity(forEntityName: "User", in: context),
